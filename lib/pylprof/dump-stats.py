@@ -11,7 +11,7 @@ except NameError:
 stats = lp.get_stats()
 unit = stats.unit
 results = {}
-for loc, timings in stats.timings.iteritems():
+for loc, timings in stats.timings.items():
     module, line, fname = loc
     if not results.get(module):
         results[module] = defaultdict(list)
